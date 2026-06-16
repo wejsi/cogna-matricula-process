@@ -1,0 +1,7 @@
+com\cogna\core\model\TurmaMatriculaTest.class
+com\cogna\core\client\CicloResponseTest.class
+com\cogna\core\client\CicloClientTest.class
+com\cogna\core\config\AppConfigTest.class
+com\cogna\core\controller\HelloControllerTest.class
+com\cogna\core\config\DataInitializerTest.class
+com\cogna\core\service\ProcessorServiceEqualDiasTest.class

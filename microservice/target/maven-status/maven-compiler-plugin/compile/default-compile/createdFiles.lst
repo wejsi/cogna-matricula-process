@@ -1,0 +1,12 @@
+com\cogna\core\model\Matricula.class
+com\cogna\core\model\Turma.class
+com\cogna\core\config\DataInitializer.class
+com\cogna\core\repository\MatriculaRepository.class
+com\cogna\core\controller\HelloController.class
+com\cogna\core\config\AppConfig.class
+com\cogna\core\client\CicloClient$CicloResponse.class
+com\cogna\core\client\CicloClient.class
+com\cogna\core\CognaApplication.class
+com\cogna\core\dto\MatriculaAtualizadaEvent.class
+com\cogna\core\dto\TurmaAtualizadaEvent.class
+com\cogna\core\service\ProcessorService.class
