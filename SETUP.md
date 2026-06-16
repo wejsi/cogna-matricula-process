@@ -1,7 +1,7 @@
 
 ---
 
-**Microserviço Java (exemplo rápido)**
+**Microserviço Java (Matrícula Process)**
 
 Foi adicionado um microserviço Spring Boot mínimo em `microservice/` com os seguintes arquivos:
 
@@ -11,7 +11,7 @@ Foi adicionado um microserviço Spring Boot mínimo em `microservice/` com os se
 - `microservice/Dockerfile` — imagem Docker básica
 - `docker-compose.yml` — compose para subir o serviço localmente
 
-Como usar (exemplo):
+Como usar:
 
 1. Buildar a aplicação com Maven:
 
@@ -43,15 +43,8 @@ Após iniciar, os endpoints disponíveis:
 - `http://localhost:8080/hello`
 - `http://localhost:8080/health`
 
-Próximos passos sugeridos:
 
-- Implementar consumo/produção Kafka e integração com MongoDB.
-- Adicionar configuração via variáveis de ambiente (ex: `CICLO_API_URL`).
-- Implementar mocks e testes de integração (WireMock/Testcontainers).
-
----
-
-**Status dos Requisitos**
+**Requisitos**
 
 - Java 17: ✅
 - Spring Boot 3.x: ✅
