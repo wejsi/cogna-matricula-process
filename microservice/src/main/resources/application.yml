@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: matricula-process
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://mongo:27017/matriculas}
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      group-id: matricula-processor
+      auto-offset-reset: earliest
+
+ciclo:
+  api-url: ${CICLO_API_URL:http://ciclo-api:8081}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    root: INFO
