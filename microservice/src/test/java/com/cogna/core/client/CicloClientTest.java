@@ -1,8 +1,8 @@
 package com.cogna.core.client;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
@@ -20,8 +20,12 @@ class CicloClientTest {
     @Mock
     RestTemplate restTemplate;
 
-    @InjectMocks
-    CicloClient client = new CicloClient(restTemplate, "http://base");
+    CicloClient client;
+
+    @BeforeEach
+    void setUp() {
+        client = new CicloClient(restTemplate, "http://base");
+    }
 
     @Test
     void getCiclo_returnsBodyOn200() {
